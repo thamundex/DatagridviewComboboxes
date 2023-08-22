@@ -103,11 +103,6 @@ Public Class Form1
         DataGridView1.AllowUserToAddRows = False
         DataGridView1.RowHeadersVisible = False
 
-        Dim pnl As New Panel()
-        Me.Controls.Add(pnl)
-        pnl.Name = "pnl"
-        pnl.Visible = True
-
         'new grid
         Dim gRow(5) As Object
         gRow(0) = 0
@@ -196,6 +191,8 @@ Public Class Form1
                 AddHandler datePicker.TextChanged, New EventHandler(AddressOf datepicker_textchanged)
 
                 datePicker.Visible = True
+                datePicker.Focus()
+                datePicker.Show()
             ElseIf DataGridView1.Rows(e.RowIndex).Cells(1).Value = "Allowed Access Time From" Then
                 timePicker = New DateTimePicker()
                 DataGridView1.Controls.Add(timePicker)
@@ -374,6 +371,17 @@ Public Class Form1
 
         currentCell.Value = dtpDatePicker.Value.ToString("dd/MM/yyyy")
     End Sub
+
+    Private Sub DataGridView1_CellEnter(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellEnter
+        If TypeOf DataGridView1(e.ColumnIndex, e.RowIndex) Is DataGridViewComboBoxCell Then
+            Dim combo As DataGridViewComboBoxCell = CType(DataGridView1(e.ColumnIndex, e.RowIndex), DataGridViewComboBoxCell)
+            If Not combo.ReadOnly AndAlso Not combo.IsInEditMode Then
+                combo.DataGridView.BeginEdit(True)
+                CType(combo.DataGridView.EditingControl, ComboBox).DroppedDown = True
+            End If
+        End If
+    End Sub
+
 
     'Public Function ToMyClass(row As DataRow) As FieldValues
     '    Return New FieldValues With

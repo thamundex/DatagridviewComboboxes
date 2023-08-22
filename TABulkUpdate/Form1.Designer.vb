@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
@@ -29,14 +29,14 @@ Partial Class Form1
         Me.colGroupShiftID = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.colGroupShiftName = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.gridEmployeeFields = New System.Windows.Forms.DataGridView()
-        Me.colChecked = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.colFieldDescription = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colNewValue = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        Me.colFieldName = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colFieldDataType = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.colFromValueTable = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.dtpDatePicker = New System.Windows.Forms.DateTimePicker()
+        Me.colFromValueTable = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colFieldDataType = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colFieldName = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colNewValue = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.colFieldDescription = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.colChecked = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.gridEmployeeFields = New System.Windows.Forms.DataGridView()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gridEmployeeFields, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -57,7 +57,7 @@ Partial Class Form1
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(622, 292)
+        Me.DataGridView1.Size = New System.Drawing.Size(622, 241)
         Me.DataGridView1.TabIndex = 1
         '
         'chkUseAutoAllocationGroups
@@ -107,73 +107,6 @@ Partial Class Form1
         Me.DateTimePicker1.Size = New System.Drawing.Size(200, 22)
         Me.DateTimePicker1.TabIndex = 139
         '
-        'gridEmployeeFields
-        '
-        Me.gridEmployeeFields.AllowUserToAddRows = False
-        Me.gridEmployeeFields.AllowUserToDeleteRows = False
-        Me.gridEmployeeFields.AllowUserToResizeColumns = False
-        Me.gridEmployeeFields.AllowUserToResizeRows = False
-        Me.gridEmployeeFields.ColumnHeadersHeight = 28
-        Me.gridEmployeeFields.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colChecked, Me.colFieldDescription, Me.colNewValue, Me.colFieldName, Me.colFieldDataType, Me.colFromValueTable})
-        Me.gridEmployeeFields.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter
-        Me.gridEmployeeFields.Location = New System.Drawing.Point(72, 311)
-        Me.gridEmployeeFields.Margin = New System.Windows.Forms.Padding(4)
-        Me.gridEmployeeFields.MultiSelect = False
-        Me.gridEmployeeFields.Name = "gridEmployeeFields"
-        Me.gridEmployeeFields.RowHeadersVisible = False
-        Me.gridEmployeeFields.RowHeadersWidth = 51
-        Me.gridEmployeeFields.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.gridEmployeeFields.RowTemplate.Height = 25
-        Me.gridEmployeeFields.Size = New System.Drawing.Size(622, 369)
-        Me.gridEmployeeFields.TabIndex = 353
-        '
-        'colChecked
-        '
-        Me.colChecked.HeaderText = ""
-        Me.colChecked.MinimumWidth = 6
-        Me.colChecked.Name = "colChecked"
-        Me.colChecked.Width = 22
-        '
-        'colFieldDescription
-        '
-        Me.colFieldDescription.HeaderText = "Field"
-        Me.colFieldDescription.MinimumWidth = 6
-        Me.colFieldDescription.Name = "colFieldDescription"
-        Me.colFieldDescription.ReadOnly = True
-        Me.colFieldDescription.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.colFieldDescription.Width = 220
-        '
-        'colNewValue
-        '
-        Me.colNewValue.HeaderText = "New Value"
-        Me.colNewValue.MinimumWidth = 6
-        Me.colNewValue.Name = "colNewValue"
-        Me.colNewValue.Width = 200
-        '
-        'colFieldName
-        '
-        Me.colFieldName.HeaderText = "FieldName"
-        Me.colFieldName.MinimumWidth = 6
-        Me.colFieldName.Name = "colFieldName"
-        Me.colFieldName.Visible = False
-        Me.colFieldName.Width = 125
-        '
-        'colFieldDataType
-        '
-        Me.colFieldDataType.HeaderText = "DataType"
-        Me.colFieldDataType.MinimumWidth = 6
-        Me.colFieldDataType.Name = "colFieldDataType"
-        Me.colFieldDataType.Visible = False
-        Me.colFieldDataType.Width = 125
-        '
-        'colFromValueTable
-        '
-        Me.colFromValueTable.HeaderText = "ForeignValueTable"
-        Me.colFromValueTable.MinimumWidth = 6
-        Me.colFromValueTable.Name = "colFromValueTable"
-        Me.colFromValueTable.Visible = False
-        Me.colFromValueTable.Width = 125
-        '
         'dtpDatePicker
         '
         Me.dtpDatePicker.CustomFormat = "dd/MM/yyyy"
@@ -184,11 +117,78 @@ Partial Class Form1
         Me.dtpDatePicker.TabIndex = 354
         Me.dtpDatePicker.Visible = False
         '
+        'colFromValueTable
+        '
+        Me.colFromValueTable.HeaderText = "ForeignValueTable"
+        Me.colFromValueTable.MinimumWidth = 6
+        Me.colFromValueTable.Name = "colFromValueTable"
+        Me.colFromValueTable.Visible = False
+        Me.colFromValueTable.Width = 125
+        '
+        'colFieldDataType
+        '
+        Me.colFieldDataType.HeaderText = "DataType"
+        Me.colFieldDataType.MinimumWidth = 6
+        Me.colFieldDataType.Name = "colFieldDataType"
+        Me.colFieldDataType.Visible = False
+        Me.colFieldDataType.Width = 125
+        '
+        'colFieldName
+        '
+        Me.colFieldName.HeaderText = "FieldName"
+        Me.colFieldName.MinimumWidth = 6
+        Me.colFieldName.Name = "colFieldName"
+        Me.colFieldName.Visible = False
+        Me.colFieldName.Width = 125
+        '
+        'colNewValue
+        '
+        Me.colNewValue.HeaderText = "New Value"
+        Me.colNewValue.MinimumWidth = 6
+        Me.colNewValue.Name = "colNewValue"
+        Me.colNewValue.Width = 200
+        '
+        'colFieldDescription
+        '
+        Me.colFieldDescription.HeaderText = "Field"
+        Me.colFieldDescription.MinimumWidth = 6
+        Me.colFieldDescription.Name = "colFieldDescription"
+        Me.colFieldDescription.ReadOnly = True
+        Me.colFieldDescription.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.colFieldDescription.Width = 220
+        '
+        'colChecked
+        '
+        Me.colChecked.HeaderText = ""
+        Me.colChecked.MinimumWidth = 6
+        Me.colChecked.Name = "colChecked"
+        Me.colChecked.Width = 22
+        '
+        'gridEmployeeFields
+        '
+        Me.gridEmployeeFields.AllowUserToAddRows = False
+        Me.gridEmployeeFields.AllowUserToDeleteRows = False
+        Me.gridEmployeeFields.AllowUserToResizeColumns = False
+        Me.gridEmployeeFields.AllowUserToResizeRows = False
+        Me.gridEmployeeFields.ColumnHeadersHeight = 28
+        Me.gridEmployeeFields.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.colChecked, Me.colFieldDescription, Me.colNewValue, Me.colFieldName, Me.colFieldDataType, Me.colFromValueTable})
+        Me.gridEmployeeFields.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter
+        Me.gridEmployeeFields.Location = New System.Drawing.Point(72, 288)
+        Me.gridEmployeeFields.Margin = New System.Windows.Forms.Padding(4)
+        Me.gridEmployeeFields.MultiSelect = False
+        Me.gridEmployeeFields.Name = "gridEmployeeFields"
+        Me.gridEmployeeFields.RowHeadersVisible = False
+        Me.gridEmployeeFields.RowHeadersWidth = 51
+        Me.gridEmployeeFields.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.gridEmployeeFields.RowTemplate.Height = 25
+        Me.gridEmployeeFields.Size = New System.Drawing.Size(622, 193)
+        Me.gridEmployeeFields.TabIndex = 353
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1008, 705)
+        Me.ClientSize = New System.Drawing.Size(998, 503)
         Me.Controls.Add(Me.dtpDatePicker)
         Me.Controls.Add(Me.gridEmployeeFields)
         Me.Controls.Add(Me.DateTimePicker1)
@@ -212,12 +212,12 @@ Partial Class Form1
     Friend WithEvents colGroupShiftID As ColumnHeader
     Friend WithEvents colGroupShiftName As ColumnHeader
     Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents gridEmployeeFields As DataGridView
-    Friend WithEvents colChecked As DataGridViewCheckBoxColumn
-    Friend WithEvents colFieldDescription As DataGridViewTextBoxColumn
-    Friend WithEvents colNewValue As DataGridViewComboBoxColumn
-    Friend WithEvents colFieldName As DataGridViewTextBoxColumn
-    Friend WithEvents colFieldDataType As DataGridViewTextBoxColumn
-    Friend WithEvents colFromValueTable As DataGridViewTextBoxColumn
     Friend WithEvents dtpDatePicker As DateTimePicker
+    Friend WithEvents colFromValueTable As DataGridViewTextBoxColumn
+    Friend WithEvents colFieldDataType As DataGridViewTextBoxColumn
+    Friend WithEvents colFieldName As DataGridViewTextBoxColumn
+    Friend WithEvents colNewValue As DataGridViewComboBoxColumn
+    Friend WithEvents colFieldDescription As DataGridViewTextBoxColumn
+    Friend WithEvents colChecked As DataGridViewCheckBoxColumn
+    Friend WithEvents gridEmployeeFields As DataGridView
 End Class
